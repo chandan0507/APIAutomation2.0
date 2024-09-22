@@ -3,8 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import ForeignKey
 
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://tqa_automation:tqa_automation@10.0.1.127:5432/tqa_automation'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://wdbsreport:wdbsreport%40T4y4n4@10.0.1.128:3306/wdbsreport'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://dbuser:dbpass@127.0.0.1:3306/dbschema'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 

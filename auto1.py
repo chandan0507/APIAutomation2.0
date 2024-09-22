@@ -9,8 +9,6 @@ from postTestCase import post_test
 from postApiAuth import postApiauth
 from dbModel import *
 
-# curl -u chan:chan http://10.0.4.225:8081/get_test/2
-
 @app.route('/get_test/<test_case_id>', methods=['GET'])
 @login_required
 def getTestCaseDeatils(test_case_id):
